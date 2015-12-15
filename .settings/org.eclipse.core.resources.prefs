@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/main/java=Cp1252
+encoding//src/main/resources=UTF-8
+encoding//src/main/webapp/WEB-INF/pages/Inspection/Inspection.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/pages/home.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/pages/organization/list.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/tiles/header.jsp=UTF-8
+encoding//src/test/java=Cp1252
+encoding/<project>=UTF-8

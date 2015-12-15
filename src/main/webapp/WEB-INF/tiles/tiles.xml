@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<!-- Layouts -->
+	<definition name="loginpage.definition" template="/WEB-INF/tiles/layout-login.jsp">
+		<put-attribute name="title" value="login" />
+		<put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+	<definition name="base.definition" template="/WEB-INF/tiles/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+	<definition name="base.list.definition" template="/WEB-INF/tiles/list-layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+	<!-- Layouts End -->
+	<!-- entry details -->
+
+	<!-- Template -->
+	<definition name="template-inspection" extends="base.definition">
+		<put-attribute name="title" value="inspection" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Inspection/Inspection.jsp" />
+	</definition>
+	<definition name="pending-inspection" extends="base.definition">
+		<put-attribute name="title" value="inspection" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Inspection/pendinginspection.jsp" />
+	</definition>
+	<definition name="completed-inspection" extends="base.definition">
+		<put-attribute name="title" value="inspection" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Inspection/completedinspection.jsp" />
+	</definition>
+	<definition name="approve-inspection" extends="base.definition">
+		<put-attribute name="title" value="inspection" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Inspection/approve.jsp" />
+	</definition>
+
+	<definition name="add-inspection" extends="base.definition">
+		<put-attribute name="title" value="inspection" />
+		<put-attribute name="body" value="/WEB-INF/pages/Inspection/add.jsp" />
+	</definition>
+
+	<definition name="edit-inspection" extends="base.definition">
+		<put-attribute name="title" value="inspection" />
+		<put-attribute name="body" value="/WEB-INF/pages/Inspection/edit.jsp" />
+	</definition>
+	<definition name="edit-inspectionp" extends="base.definition">
+		<put-attribute name="title" value="inspection" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Inspection/editp.jsp" />
+	</definition>
+	<definition name="delete-inspection" extends="base.definition">
+		<put-attribute name="title" value="inspection" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Inspection/delete.jsp" />
+	</definition>
+	<!-- Template -->
+	<definition name="create-entry" extends="base.definition">
+		<put-attribute name="title" value="Create User" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/entry_details/list.jsp" />
+	</definition>
+	<definition name="create-entry-delete" extends="base.definition">
+		<put-attribute name="title" value="Create User" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/entry_details/delete.jsp" />
+	</definition>
+	<definition name="create-entry-edit" extends="base.definition">
+		<put-attribute name="title" value="Create User" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/entry_details/edit.jsp" />
+	</definition>
+	<!-- File Upload -->
+	<definition name="file-upload-form" extends="base.definition">
+		<put-attribute name="title" value="Upload File" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/file-upload/form.jsp" />
+	</definition>
+	<definition name="file-upload-success" extends="base.definition">
+		<put-attribute name="title" value="Upload File Successful" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/file-upload/success.jsp" />
+	</definition>
+	<definition name="file-upload-error" extends="base.definition">
+		<put-attribute name="title" value="Upload File Successful" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/file-upload/fError.jsp" />
+	</definition>
+	<!-- Root End -->
+	<definition name="home" extends="base.list.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/home.jsp" />
+	</definition>
+
+	<definition name="admin-first" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/admin-first.jsp" />
+	</definition>
+
+	<definition name="admin-second" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/admin-second.jsp" />
+	</definition>
+
+	<definition name="moderation" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/moderation.jsp" />
+	</definition>
+
+	<definition name="create-user-form" extends="base.definition">
+		<put-attribute name="title" value="Create User" />
+		<put-attribute name="body" value="/WEB-INF/pages/user/create.jsp" />
+	</definition>
+	<definition name="create-user1-form" extends="base.definition">
+		<put-attribute name="title" value="Create User" />
+		<put-attribute name="body" value="/WEB-INF/pages/user/create1.jsp" />
+	</definition>
+	<definition name="edit-user-form" extends="base.definition">
+		<put-attribute name="title" value="Create User" />
+		<put-attribute name="body" value="/WEB-INF/pages/user/edit.jsp" />
+	</definition>
+	<definition name="delete-user-form" extends="base.definition">
+		<put-attribute name="title" value="Create User" />
+		<put-attribute name="body" value="/WEB-INF/pages/user/delete.jsp" />
+	</definition>
+
+	<!-- Root -->
+	<definition name="login-form" extends="loginpage.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/login-form.jsp" />
+	</definition>
+	<definition name="signup-form" extends="loginpage.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/signup-form.jsp" />
+	</definition>
+	<!-- Root End -->
+	<definition name="list-inspection" extends="base.list.definition">
+		<put-attribute name="title" value="Inspection" />
+		<put-attribute name="body" value="/WEB-INF/pages/Inspection/list.jsp" />
+	</definition>
+
+	<definition name="home-list" extends="base.list.definition">
+		<put-attribute name="title" value="Inspection" />
+		<put-attribute name="body" value="/WEB-INF/pages/Inspection/home.jsp" />
+	</definition>
+
+	<definition name="listp-inspection" extends="base.list.definition">
+		<put-attribute name="title" value="Inspection" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Inspection/listp.jsp" />
+	</definition>
+	<definition name="listc-inspection" extends="base.list.definition">
+		<put-attribute name="title" value="Inspection" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Inspection/listc.jsp" />
+	</definition>
+
+	<!-- Template Detail Start -->
+	<definition name="list-templatedetail-form" extends="base.list.definition">
+		<put-attribute name="title" value="List Template Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/template/templatedetail/list.jsp" />
+	</definition>
+	<definition name="list-templatedetailp-form" extends="base.list.definition">
+		<put-attribute name="title" value="List Template Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/template/templatedetail/listp.jsp" />
+	</definition>
+	<definition name="create-templatedetail-form" extends="base.list.definition">
+		<put-attribute name="title" value="Create Template Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/template/templatedetail/add.jsp" />
+	</definition>
+
+	<definition name="edit-templatedetail-form" extends="base.list.definition">
+		<put-attribute name="title" value="Edit Template Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/template/templatedetail/edit.jsp" />
+	</definition>
+
+	<definition name="delete-templatedetail-form" extends="base.list.definition">
+		<put-attribute name="title" value="Delete Template Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/template/templatedetail/delete.jsp" />
+	</definition>
+
+	<!-- Template Detail End -->
+
+	<!-- Entry Header Start -->
+	<definition name="list-EntryHeader-form" extends="base.list.definition">
+		<put-attribute name="title" value="List Template Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/EntryHeader/list.jsp" />
+	</definition>
+
+	<definition name="edit-EntryHeader-form" extends="base.list.definition">
+		<put-attribute name="title" value="List Template Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/EntryHeader/edit.jsp" />
+	</definition>
+	<definition name="delete-EntryHeader-form" extends="base.list.definition">
+		<put-attribute name="title" value="List Template Detail" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/EntryHeader/delete.jsp" />
+	</definition>
+
+	<!-- Entry Header End -->
+	<!-- Profile -->
+	<definition name="profile" extends="base.definition">
+		<put-attribute name="title" value="profile" />
+		<put-attribute name="body" value="/WEB-INF/pages/Profile.jsp" />
+	</definition>
+	<!-- Profile End -->
+
+	<!-- JSON Start -->
+	<definition name="list-user-json" extends="loginpage.definition">
+		<put-attribute name="title" value="List User JSON" />
+		<put-attribute name="body" value="/WEB-INF/pages/json/user_json.jsp" />
+	</definition>
+	<!-- JSON End -->
+
+
+
+	<definition name="success-login" extends="loginpage.definition">
+		<put-attribute name="title" value="Login Successful" />
+		<put-attribute name="body" value="/WEB-INF/pages/success-login.jsp" />
+	</definition>
+
+	<definition name="create-template-form" extends="base.definition">
+		<put-attribute name="title" value="Create Template Master" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/template/addtemplateheader.jsp" />
+	</definition>
+
+	<definition name="list-template-form" extends="base.list.definition">
+		<put-attribute name="title" value="List Templates" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/template/templateheader.jsp" />
+	</definition>
+	<definition name="list-templatec-form" extends="base.list.definition">
+		<put-attribute name="title" value="List Templates" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/template/templateheaderc.jsp" />
+	</definition>
+	<definition name="edit-template-form" extends="base.definition">
+		<put-attribute name="title" value="Edit Templates" />
+		<put-attribute name="body" value="/WEB-INF/pages/template/edit.jsp" />
+	</definition>
+
+	<definition name="delete-template-form" extends="base.definition">
+		<put-attribute name="title" value="Delete Templates" />
+		<put-attribute name="body" value="/WEB-INF/pages/template/delete.jsp" />
+	</definition>
+
+	<definition name="edit-organization-form" extends="base.definition">
+		<put-attribute name="title" value="Edit Organization" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/organization/edit.jsp" />
+	</definition>
+
+	<definition name="delete-organization-form" extends="base.definition">
+		<put-attribute name="title" value="Delete Organization" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/organization/delete.jsp" />
+	</definition>
+
+
+	<definition name="list-organization-form" extends="base.list.definition">
+		<put-attribute name="title" value="List Organizations" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/organization/list.jsp" />
+	</definition>
+
+	<definition name="create-organization-form" extends="base.definition">
+		<put-attribute name="title" value="Create Organization" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/organization/create.jsp" />
+	</definition>
+
+	<definition name="list-user-form" extends="base.list.definition">
+		<put-attribute name="title" value="List User" />
+		<put-attribute name="body" value="/WEB-INF/pages/user/list.jsp" />
+	</definition>
+
+	<definition name="create-user-form" extends="base.definition">
+		<put-attribute name="title" value="Create User" />
+		<put-attribute name="body" value="/WEB-INF/pages/user/create.jsp" />
+	</definition>
+
+
+</tiles-definitions>
